@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+apply plugin: 'idea'
+
+apply plugin: 'eclipse'
+apply plugin: 'eclipse-wtp'
+
+version = '1.0'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile (
+            "javax.servlet:servlet-api:2.5",
+            'org.springframework:spring-webmvc:3.2.6.RELEASE',
+            "org.slf4j:slf4j-log4j12:1.7.5",
+            "org.slf4j:slf4j-jdk14:1.7.5",
+            "mysql:mysql-connector-java:5.1.24"
+    )
+    runtime 'javax.servlet:jstl:1.2'
+}
+
+
+/*war {
+    from 'src/main/webapp' // adds a file-set to the root of the archive
+    webInf { from 'src/main/resources' } // adds a file-set to the WEB-INF dir.
+    webXml = file('src/webapp/WEB-INF/web.xml') // copies a file to WEB-INF/web.xml
+}
+*/
+
