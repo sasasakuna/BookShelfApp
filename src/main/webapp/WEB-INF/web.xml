@@ -17,21 +17,22 @@
             <param-value>classpath:web-context.xml</param-value>
         </init-param>
     </servlet>
+    <servlet-mapping>
+        <servlet-name>boolshelf</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    
     <servlet>
-    	<description>
-    	no thing</description>
+    	<description>no thing</description>
     	<display-name>HelloWorld</display-name>
     	<servlet-name>HelloWorld</servlet-name>
     	<servlet-class>com.tw.liujie.bookshelf.servlet.HelloWorld</servlet-class>
     </servlet>
 
-    <servlet-mapping>
-        <servlet-name>boolshelf</servlet-name>
-        <url-pattern>*.do</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping>
     	<servlet-name>HelloWorld</servlet-name>
-    	<url-pattern>/HelloWorld</url-pattern>
+    	<url-pattern>/sayHello</url-pattern>
     </servlet-mapping>
 
 </web-app>
