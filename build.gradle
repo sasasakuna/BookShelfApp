@@ -6,7 +6,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'eclipse-wtp'
 
-version = '1.0'
+//version = '1.0'
 
 sourceCompatibility = 1.5
 
@@ -19,8 +19,7 @@ dependencies {
     compile (
             "javax.servlet:servlet-api:2.5",
             'org.springframework:spring-webmvc:3.2.6.RELEASE',
-            "org.slf4j:slf4j-log4j12:1.7.5",
-            "org.slf4j:slf4j-jdk14:1.7.5"
+            "org.slf4j:slf4j-log4j12:1.7.5"
             //,
             //"mysql:mysql-connector-java:5.1.24"
     )
