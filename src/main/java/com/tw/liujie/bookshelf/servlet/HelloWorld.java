@@ -40,7 +40,7 @@ public class HelloWorld extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<html>");
-		out.println("<head><title>say Hello</title></head>");
+		out.println("<head><meta charset=\"UTF-8\"><title>say Hello</title></head>");
 		out.println("<body>");
 		out.println("<h1>");
 		out.println("Hello!<br>");
