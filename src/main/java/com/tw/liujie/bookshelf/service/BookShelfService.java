@@ -3,6 +3,7 @@ package com.tw.liujie.bookshelf.service;
 import com.tw.liujie.bookshelf.domain.Book;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by jjliu on 8/15/14.
@@ -30,5 +31,11 @@ public interface BookShelfService {
      * @return
      */
     public boolean addBook(Book book);
+
+    /**
+     * 返回所有电子书的名称和书的Map
+     * @return
+     */
+    public Map<String,Book> queryAllEBookNames();
 
 }

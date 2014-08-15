@@ -5,6 +5,7 @@ import com.tw.liujie.bookshelf.service.BookShelfService;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by jjliu on 8/15/14.
@@ -24,5 +25,9 @@ public class BookShelfServiceImpl implements BookShelfService{
 
     public boolean addBook(Book book) {
         return false;
+    }
+
+    public Map<String, Book> queryAllEBookNames() {
+        return null;
     }
 }

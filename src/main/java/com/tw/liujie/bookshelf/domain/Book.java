@@ -12,7 +12,6 @@ public abstract class Book implements Serializable{
     private String name;
     private BigDecimal price;
     private List<String> authors;
-    private BookStatus status;
 
     abstract String getLocation();
 
@@ -48,11 +47,4 @@ public abstract class Book implements Serializable{
         this.authors = authors;
     }
 
-    public BookStatus getStatus() {
-        return status;
-    }
-
-    public void setStatus(BookStatus status) {
-        this.status = status;
-    }
 }

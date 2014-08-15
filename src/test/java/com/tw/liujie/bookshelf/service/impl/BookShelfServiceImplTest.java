@@ -18,7 +18,7 @@ public class BookShelfServiceImplTest {
     }
 
     @Test
-    public void testBorrowBookByName() throws Exception {
+    public void testueryBookByName() throws Exception {
         fail("not yet implemented");
     }
 
@@ -26,4 +26,10 @@ public class BookShelfServiceImplTest {
     public void testAddBook() throws Exception {
         fail("not yet implemented");
     }
+
+    @Test
+    public void testQueryAllEBookNames() throws Exception {
+        fail("not yet implemented");
+    }
+
 }
