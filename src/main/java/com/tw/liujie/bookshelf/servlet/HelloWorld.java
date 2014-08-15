@@ -73,7 +73,8 @@ public class HelloWorld extends HttpServlet {
 	@Override
 	public void destroy() {
 		// TODO Auto-generated method stub
-		System.out.println("destroy...");
+		System.out.println("" +
+                "...");
 		super.destroy();
 	}
 

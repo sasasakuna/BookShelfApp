@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app [
+        <!ELEMENT web-app (servlet|servlet-mapping)*>
+        <!ATTLIST web-app
+                version CDATA #REQUIRED
+                xmlns CDATA #REQUIRED
+                xmlns:xsi CDATA #REQUIRED
+                xsi:schemaLocation CDATA #REQUIRED>
+        <!ELEMENT servlet (servlet-name|servlet-class|init-param|description|display-name)*>
+        <!ELEMENT servlet-name (#PCDATA)>
+        <!ELEMENT servlet-class (#PCDATA)>
+        <!ELEMENT init-param (param-name|param-value)*>
+        <!ELEMENT param-name (#PCDATA)>
+        <!ELEMENT param-value (#PCDATA)>
+        <!ELEMENT servlet-mapping (servlet-name|url-pattern)*>
+        <!ELEMENT url-pattern (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT display-name (#PCDATA)>
+        ]>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
