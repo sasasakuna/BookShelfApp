@@ -13,6 +13,13 @@ public abstract class Book implements Serializable{
     private BigDecimal price;
     private List<String> authors;
 
+    protected Book(String isbn, String name, BigDecimal price, List<String> authors) {
+        this.isbn = isbn;
+        this.name = name;
+        this.price = price;
+        this.authors = authors;
+    }
+
     abstract String getLocation();
 
     public String getIsbn() {

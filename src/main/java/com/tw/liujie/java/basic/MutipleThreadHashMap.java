@@ -1,6 +1,5 @@
 package com.tw.liujie.java.basic;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -15,7 +14,9 @@ public class MutipleThreadHashMap {
 
     }
 
-    private Map<String, String> map = new HashMap<String, String>();
+//    private Map<String, String> map = new HashMap<String, String>();
+    private Map<String, String> map = new ConcurrentHashMap<String, String>();
+
     int i=100000;
 
     public void test() {
